@@ -43,8 +43,8 @@ library(ggplot2)
 #Visualize the 1960 dataset
 p<-ggplot(data=merged1960, aes(x=Fertility.Rate, y=Life.Exp,
       colour=Region,                               #colour
-      size=Fertility.Rate, 
-      alpha=0.3 ))                    #transparency
+      size=Fertility.Rate), 
+      alpha=0.3 )                   #transparency
 p+geom_point()+ggtitle("Life Expectancy v/s Fertility Rate")+xlab("Fertility Rate")+ylab("Life Expectancy")+theme(axis.text.y=element_text(size=0))
 
 
